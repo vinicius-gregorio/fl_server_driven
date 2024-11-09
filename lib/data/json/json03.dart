@@ -1,14 +1,7 @@
-final String json03 = '''
-  {
-    "type": "container",
-    "padding": "16.0",
-    "child": {
-      "type": "raised_button",
-      "child": {
-        "type": "text",
-        "data": "Press Me"
-      },
-      "onPressed": "print('Button pressed!')"
-    }
-  }
-  ''';
+// final String json03 = {
+//   "type": "text",
+//   "args": {
+//     "data": "Hello World",
+//     "style": {"color": "#fff44336", "inherit": true}
+//   }
+// };

@@ -7,11 +7,11 @@ const json02 = {
         "args": {
           "subtitle": {
             "type": "text",
-            "args": {"data": "Visualize e edite seus dados"}
+            "args": {"text": "Visualize e edite seus dados"}
           },
           "title": {
             "type": "text",
-            "args": {"data": "Meus dados"}
+            "args": {"text": "Meus dados"}
           }
         }
       },
@@ -20,11 +20,12 @@ const json02 = {
         "args": {
           "subtitle": {
             "type": "text",
-            "args": {"data": "Configure o aplicativo"}
+            "args": {"text": "Configure o aplicativo"},
+            "style": {"color": "0XFF0e0e0e", "inherit": true}
           },
           "title": {
             "type": "text",
-            "args": {"data": "Configurações"}
+            "args": {"text": "Configurações"}
           }
         }
       },
@@ -33,11 +34,24 @@ const json02 = {
         "args": {
           "subtitle": {
             "type": "text",
-            "args": {"data": "Conheça mais sobre o aplicativo"}
+            "args": {"text": "Conheça mais sobre o aplicativo"}
           },
           "title": {
             "type": "text",
-            "args": {"data": "Sobre"}
+            "args": {"text": "Sobre"}
+          }
+        }
+      },
+      {
+        "type": "list_tile",
+        "args": {
+          "subtitle": {
+            "type": "text",
+            "args": {"text": "Sair do aplicativo"}
+          },
+          "title": {
+            "type": "text",
+            "args": {"text": "Sair"}
           }
         }
       }
