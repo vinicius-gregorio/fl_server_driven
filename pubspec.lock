@@ -473,7 +473,7 @@ packages:
     source: hosted
     version: "3.0.1+17"
   json_dynamic_widget:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: json_dynamic_widget
       sha256: "484fb1866ca32f1cc2319b9d80636b76e1c1f2cca15b448a1c45b2d211cf6401"
