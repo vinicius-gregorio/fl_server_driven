@@ -1,8 +1,6 @@
 import 'package:fl_server_driven/common/widgets/global_appbar/global_appbar.dart';
 import 'package:fl_server_driven/common/widgets/global_drawer/global_drawer.dart';
 import 'package:fl_server_driven/data/json/json01.dart';
-import 'package:fl_server_driven/data/json/json02.dart';
-import 'package:fl_server_driven/data/json/json03.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 
 class RendererHomePage extends StatefulWidget {
@@ -18,13 +16,14 @@ class _RendererHomePageState extends State<RendererHomePage> {
   @override
   void initState() {
     super.initState();
-    _data = JsonWidgetData.fromDynamic(json03);
-    print('Data initialized: ${_data != null}');
+    _data = JsonWidgetData.fromDynamic(json01,
+        registry: JsonWidgetRegistry.instance);
+
+    print(" _data: $_data");
   }
 
   @override
   Widget build(BuildContext context) {
-    final registry = JsonWidgetRegistry.instance;
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: GlobalAppbar(title: "Renderer"),
@@ -43,11 +42,9 @@ class _RendererHomePageState extends State<RendererHomePage> {
               height: 300,
               child: _data!.build(
                 context: context,
-                registry: registry,
+                registry: JsonWidgetRegistry.instance,
               ),
             )
-          else
-            Center(child: Text("Data not initialized")),
         ],
       ),
     );
